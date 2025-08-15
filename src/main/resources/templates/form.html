@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ovni</title>
+</head>
+<body>
+
+<h1>Ovni</h1>
+
+<h2>New Sight</h2>
+
+<form method="POST">
+    <fieldset>
+        <legend>Location</legend>
+        <input name="location" type="text" placeholder="location"/>
+        <p>required field</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Date and Time</legend>
+        <input name="dateTime" type="datetime-local"/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Color</legend>
+        <input name="color" type="text" placeholder="color"/>
+        <p>required field</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Shape</legend>
+        <select name="shape" required>
+            <option value="">Select a shape</option>
+            <option value="DISC">Disc</option>
+            <option value="TRIANGLE">Triangle</option>
+            <option value="SPHERE">Sphere</option>
+            <option value="OTHER">Other</option>
+        </select>
+        <p>required field</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Quantity</legend>
+        <input name="quantity" type="number"/>
+        <p>required field</p>
+    </fieldset>
+
+    <div>
+        <a href="/ovni">Cancel</a>
+        <button>Create</button>
+    </div>
+
+</form>
+</body>
+</html>

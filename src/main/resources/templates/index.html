@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Ovni</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
 
@@ -10,7 +24,28 @@
 
 <a href="/ovni/form">New Sight</a>
 
-<p th:each="ovni : ${ovnis}" th:text="${ovni}"></p>
+<!-- Tabela para exibir os dados -->
+<table>
+    <thead>
+    <tr>
+        <th>Location</th>
+        <th>Date and Time</th>
+        <th>Color</th>
+        <th>Shape</th>
+        <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iteração sobre a lista de OVNIs -->
+    <tr th:each="ovni : ${ovnis}">
+        <td th:text="${ovni.location}"></td>
+        <td th:text="${ovni.dateTime}"></td>
+        <td th:text="${ovni.color}"></td>
+        <td th:text="${ovni.shape}"></td>
+        <td th:text="${ovni.quantity}"></td>
+    </tr>
+    </tbody>
+</table>
 
 </body>
 </html>

@@ -14,4 +14,8 @@ public class OvniService {
     public List<Ovni> index() {
         return repository.findAll();
     }
+
+    public Ovni save(Ovni ovni) {
+        return repository.save(ovni);
+    }
 }
