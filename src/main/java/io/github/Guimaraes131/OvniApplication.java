@@ -1,4 +1,4 @@
-package oi.github.Guimaraes131.ovni;
+package io.github.Guimaraes131;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
